@@ -1,3 +1,2 @@
-# Avito
-Вёрстка адаптивного сайта на подобии авито
-https://polotenhicko.github.io/Avito/
+Invalito
+by MAI students
