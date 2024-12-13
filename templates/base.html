@@ -11,23 +11,23 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
-    <title>{{title}}</title>
+    <title>Инвалито</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-light" style="background-color: #5eb9ce;">
+        <nav class="navbar navbar-light fixed-top" style="background-color: #007fff;">
             <a class="navbar-brand" href="/">
                 <h1 style="color: white;">Инвалито</h1>
             </a>
-            <input type="text" placeholder="Поиск">
+            <input style= "border: 1px solid #ccc; border-radius: 10px;" type="text" placeholder="Поиск">
             {% if current_user.is_authenticated %}
             <a class="navbar-brand" style="color: white;" href="/favourites">Избранное</a>
             <a class="navbar-brand" style="color: white;" href="/logout">Выход</a>
             {% else %}
             <p>
-                <a class="btn btn-light ml-auto" href="/register" style="margin-top: 1rem; ">Зарегистрироваться</a>
-                <a class="btn btn-light ml-auto" href="/login" style="margin-top: 1rem;">Войти</a>
+                <a class="btn btn-light ml-auto" href="/register" style="margin-top: 1rem; border: 1px solid #ccc; border-radius: 10px;">Зарегистрироваться</a>
+                <a class="btn btn-light ml-auto" href="/login" style="margin-top: 1rem; border: 1px solid #ccc; border-radius: 10px;">Войти</a>
             </p>
             {% endif %}
         </nav>
