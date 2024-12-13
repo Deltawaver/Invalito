@@ -7,6 +7,11 @@
 background-color: #BC3D96; /* Adjust color as needed */
 }
 
+body {
+  background-attachment: fixed;
+  background: linear-gradient(180deg, rgb(193, 193, 206) 5%, rgb(54, 54, 59) 100%);
+}
+
 /* Set navbar text color */
 .navbar-brand,
 .navbar-nav .nav-link {
