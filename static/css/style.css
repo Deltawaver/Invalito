@@ -4,7 +4,12 @@
 }
 /* Set navbar background color */
 .navbar {
-background-color: #BC3D96; /* Adjust color as needed */
+background-color: #ffd000; /* Adjust color as needed */
+}
+
+body {
+  background-attachment: fixed;
+  background: whitesmoke;
 }
 
 /* Set navbar text color */
@@ -34,7 +39,7 @@ margin-top: 100px; /* Adjust spacing as needed */
   margin: 0 auto; /* Center the form horizontally */
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
@@ -57,7 +62,7 @@ margin-top: 100px; /* Adjust spacing as needed */
   width: 100%;
   padding: 5px; /* Reduced padding for less space around text */
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 10px;
   box-sizing: border-box;
   margin-bottom: 10px;
 }
@@ -81,4 +86,22 @@ margin-top: 100px; /* Adjust spacing as needed */
 /* Styling for the login form submit button on hover */
 .login-container button[type="submit"]:hover {
   background-color: #45a049; /* Darker green */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-control {
+  border: 1px solid #ccc; 
+  border-radius: 10px;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; 
 }
