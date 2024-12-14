@@ -4,24 +4,31 @@ from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
+
 class Product(Base):
-    __tablename__ = 'products'
+    __tablename__ = "database"
     id = Column(Integer, primary_key=True)
     name = Column(String)
     price = Column(Float)
-    previous_price = Column(Float)
+    location = Column(String)
     image_url = Column(String)
 
 
 class Database:
     def __init__(self, db_path):
-        self.engine = create_engine(f'sqlite:///{db_path}')
+        self.engine = create_engine(f"sqlite:///{db_path}")
         Base.metadata.create_all(self.engine)
         self.Session = sessionmaker(bind=self.engine)
         self.session = self.Session()
 
     def add(self, id, name, price, latest_price, image_url):
-        new_product = Product(id=id, name=name, price=price, previous_price=latest_price, image_url=image_url)
+        new_product = Product(
+            id=id,
+            name=name,
+            price=price,
+            previous_price=latest_price,
+            image_url=image_url,
+        )
         self.session.add(new_product)
         try:
             self.session.commit()
@@ -87,5 +94,6 @@ class Database:
             print(e)
             return False
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     db = Database("products.db")
