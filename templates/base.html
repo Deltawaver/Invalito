@@ -20,14 +20,16 @@
             <a class="navbar-brand" href="/">
                 <h1 style="color: white;">Инвалито</h1>
             </a>
-            <input style= "border: 1px solid #ccc; border-radius: 10px;" type="text" placeholder="Поиск">
+            <!-- <input style= "border: 1px solid #ccc; border-radius: 10px;" type="text" placeholder="Поиск"> -->
             {% if current_user.is_authenticated %}
-            <a class="navbar-brand" style="color: white;" href="/favourites">Избранное</a>
+            <!-- <a class="navbar-brand" style="color: white;" href="/favourites">Избранное</a> -->
             <a class="navbar-brand" style="color: white;" href="/logout">Выход</a>
             {% else %}
             <p>
-                <a class="btn btn-light ml-auto" href="/register" style="margin-top: 1rem; border: 1px solid #ccc; border-radius: 10px;">Зарегистрироваться</a>
-                <a class="btn btn-light ml-auto" href="/login" style="margin-top: 1rem; border: 1px solid #ccc; border-radius: 10px;">Войти</a>
+                <a class="btn btn-light ml-auto" href="/register"
+                    style="margin-top: 1rem; border: 1px solid #ccc; border-radius: 10px;">Зарегистрироваться</a>
+                <a class="btn btn-light ml-auto" href="/login"
+                    style="margin-top: 1rem; border: 1px solid #ccc; border-radius: 10px;">Войти</a>
             </p>
             {% endif %}
         </nav>
