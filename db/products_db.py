@@ -10,6 +10,7 @@ class Product(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String)
     price = Column(Float)
+    url = Column(String)
     location = Column(String)
     image_url = Column(String)
 
