@@ -1,2 +1,0 @@
-Invalito
-by MAI students
